@@ -41,6 +41,20 @@ services:
       - ./prometheus:/etc/prometheus
     networks:
       - mcserver
+    ports:
+      - 8005:9090
+  node-exporter:
+    #inside Port is 9100
+    container_name: node-exporter
+    restart: always
+    image: prom/node-exporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    networks:
+      - mcserver
 
 networks:
   mcserver:
+  mainserver:

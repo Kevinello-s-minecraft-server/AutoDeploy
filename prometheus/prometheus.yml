@@ -9,8 +9,14 @@ scrape_configs:
         labels:
           instance: prometheus
 
-  - job_name: linux
+  - job_name: mincraft
     static_configs:
       - targets: ['mcserver_exporter:8000']
+        labels:
+          instance: localhost
+
+  - job_name: main_server
+    static_configs:
+      - targets: ['node-exporter:9100']
         labels:
           instance: localhost
