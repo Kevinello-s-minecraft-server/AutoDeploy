@@ -1,6 +1,6 @@
 {
   "tabDisplayHandler": {
-    "enabled": false
+    "enabled": true
   },
   "actionBarDisplayHandler": {
     "enabled": false
