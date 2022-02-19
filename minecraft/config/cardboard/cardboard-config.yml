@@ -1,0 +1,16 @@
+# This is the configuration file for Cardboard
+
+# Invoke ChatEvent from PlayerManager instead of NetworkHandler
+# This can solve issues with other mods that overwrite the chat method,
+use_alternative_chat_mixin: false
+
+# Reflection Remapper Skip
+# Our current Reflection remapper might cause issues with some plugins
+# You can add plugin names here (that dont use Reflection) to our SKIP array
+skip_reflection_for_plugin:
+	- vault
+	- worldguard
+
+# Forcefully Disable Mixins - If a mixin is causing an issue you can disable it here
+mixin-force-disable:
+	- None

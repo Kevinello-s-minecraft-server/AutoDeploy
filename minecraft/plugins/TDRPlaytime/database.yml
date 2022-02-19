@@ -1,0 +1,10 @@
+# TDR Playtime Plugin Database
+# You can use the following database types : yaml/mysql
+database: yaml
+mysql:
+  hostname: localhost
+  port: 3306
+  user: root
+  password: password
+  database: playtime
+  table_prefix: ''

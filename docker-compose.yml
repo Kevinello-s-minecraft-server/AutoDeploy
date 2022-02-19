@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  mc-server:
+    container_name: mc_server
+    restart: always
+    image: kevinserver:latest
+    environment:
+      - MCRAM=9G
+      - RAM=10G
+    volumes:
+      - ./minecraft:/srv/minecraft
+    networks:
+      - mcserver
+    ports:
+      - 25565:25565
+  mcserver_exporter:
+    container_name: mcserver_exporter
+    restart: always
+    image: ghcr.io/dirien/minecraft-exporter:latest
+    entrypoint: /usr/bin/minecraft-exporter  --web.listen-address=":8000"  --mc.world="/minecraft/world"  --mc.rcon-address="mc-server:25575"  --mc.rcon-password="kevinmatt"  --mc.mod-server-stats=fabric  --mc.name-source="offline"
+    volumes:
+      - ./minecraft/world:/minecraft/world
+    networks:
+      - mcserver
+  mcserver_grafana:
+    container_name: mcserver_grafana
+    restart: always
+    image: grafana/grafana-enterprise
+    volumes:
+      - ./grafana-storage:/var/lib/grafana
+    ports:
+      - 3002:3000
+    networks:
+      - mcserver
+  mcserver_prometheus:
+    container_name: mcserver_prometheus
+    restart: always
+    image: prom/prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    networks:
+      - mcserver
+
+networks:
+  mcserver:

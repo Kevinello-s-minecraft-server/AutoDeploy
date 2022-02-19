@@ -1,0 +1,29 @@
+only:
+  player:
+    command: '&cThis is a player only command!'
+command:
+  playtime:
+    timemessage: '&8[&6PlayTime&8] &7Your playtime is &6%D% &7day(s) &6%H% &7hour(s)
+      &6%M% &7minute(s) &6%S% &7second(s)'
+    usertimemessage: '&8[&6PlayTime&8] &7%NAME% ''s playtime is &6%D% &7day(s) &6%H%
+      &7hour(s) &6%M% &7minute(s) &6%S% &7second(s)'
+    resettimeconfirm: '&cUser time reset!'
+    resettimeussage: '&cUse : /playtime reset <username>!'
+  milestone:
+    mustbenumber: '&cThe time parameter must be a number!'
+    createusage: '&cUse : /milestone create <name> <time in seconds>!'
+    milestonenotexist: '&cThe milestone <name> doesn''t exist!'
+    additemusage: '&cUse : /milestone additem <milestone>! The item in your hand wil
+      be added!'
+    addcommandusage: '&cUse : /milestone addcommand <milestone> <command>!'
+    milestonecreated: '&aThe milestone is created!'
+    itemadded: '&aYou added succesfull a item to the milestone!'
+    commandadded: '&aYou added succesfull a command to the milestone!'
+    togglefireworkusage: '&cUse : /milestone togglefirework <milestone>!'
+    setfireworkamountusage: '&cUse : /milestone setfireworkamount <milestone> <amount>!'
+    setfireworkdelayusage: '&cUse : /milestone setfireworkdelay <milestone> <delay
+      in seconds>!'
+    fireworktoggled: '&aYou <state> the firework for the milestone'
+    setfireworkamount: '&aYou set the firework amount to <amount>'
+    setfireworkdelay: '&aYou set the firework amount to <amount>'
+version: 1.1

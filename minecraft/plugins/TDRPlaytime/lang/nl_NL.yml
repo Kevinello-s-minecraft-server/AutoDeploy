@@ -1,0 +1,30 @@
+only:
+  player:
+    command: '&cDit is een command die alleen een speler kan gebruiken!'
+command:
+  playtime:
+    timemessage: '&8[&6PlayTime&8] &7Jouw speeltijd is &6%D% &7dag(en) &6%H% &7uur
+      &6%M% &7minuut(en) &6%S% &7seconde(n)'
+    usertimemessage: '&8[&6PlayTime&8] &7%NAME% ''''s speeltijd is &6%D% &7dag(en)
+      &6%H% &7uur &6%M% &7minuut(en) &6%S% &7seconde(n)'
+    resettimeconfirm: '&cDe tijd van de speler is gereset!'
+    resettimeussage: '&cGebruik : /playtime reset <username>!'
+  milestone:
+    mustbenumber: '&cDe tijd parameter moet een nummer zijn!'
+    createusage: '&cGebruik : /milestone create <name> <time in seconds>!'
+    milestonenotexist: '&cDe mijlpaal <name> bestaat niet!'
+    additemusage: '&cGebruik : /milestone additem <milestone>! Het item in je hand
+      wordt dan toegevoegd!'
+    addcommandusage: '&cGebruik : /milestone addcommand <milestone> <command>!'
+    milestonecreated: '&aDe mijlpaal is aangemaakt!'
+    itemadded: '&aJe hebt succesvol een item toegevoegd aan de mijlpaal!'
+    commandadded: '&aJe hebt succesvol een command toegevoegd aan de mijlpaal!'
+    togglefireworkusage: '&cGebruik : /milestone togglefirework <mijlpaal>!'
+    setfireworkamountusage: '&cGebruik : /milestone setfireworkamount <milestone>
+      <aantal>!'
+    setfireworkdelayusage: '&cGebruik : /milestone setfireworkdelay <mijlpaal> <vertraging
+      in seconden>!'
+    fireworktoggled: '&aJe <state> het vuurwerk voor de mijlpaal'
+    setfireworkamount: '&aJe stelt het vuurwerk aantal in op <amount>'
+    setfireworkdelay: '&aJe stelt het vuurwerk vertraging in op <amount>'
+version: 1.1
