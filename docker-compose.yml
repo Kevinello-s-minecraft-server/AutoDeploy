@@ -14,6 +14,8 @@ services:
       - mcserver
     ports:
       - 25565:25565
+      - 25575:25575
+      - 60606:60606/udp
   mcserver_exporter:
     container_name: mcserver_exporter
     restart: always
@@ -41,8 +43,8 @@ services:
       - ./prometheus:/etc/prometheus
     networks:
       - mcserver
-    ports:
-      - 8005:9090
+    # ports:
+      # - 8005:9090
   node-exporter:
     #inside Port is 9100
     container_name: node-exporter

@@ -11,7 +11,7 @@ scrape_configs:
 
   - job_name: mincraft
     static_configs:
-      - targets: ['mcserver_exporter:8000']
+      - targets: ['mc_server:9100']
         labels:
           instance: localhost
 
