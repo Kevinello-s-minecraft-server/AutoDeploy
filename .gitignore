@@ -1,4 +1,6 @@
 minecraft/world/*
+minecraft/bluemap
+prometheus/data
 grafana-storage/*
 *.log
 .fabric/
