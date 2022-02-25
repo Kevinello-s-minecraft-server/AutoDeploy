@@ -17,6 +17,17 @@ services:
       - 25575:25575
       - 60606:60606/udp
       - 8100:8100
+  mcserver_loki:
+    container_name: mcserver_loki
+    image: grafana/loki
+    restart: always
+    command: -config.file=/etc/loki/loki.yaml
+    volumes:
+      - ./loki/loki.yaml:/etc/loki/loki.yaml
+    ports:
+      - "3100:3100"
+    networks:
+      - mcserver
   mcserver_exporter:
     container_name: mcserver_exporter
     restart: always
@@ -44,8 +55,6 @@ services:
       - ./prometheus:/etc/prometheus
     networks:
       - mcserver
-    # ports:
-      # - 8005:9090
   node-exporter:
     #inside Port is 9100
     container_name: node-exporter
@@ -60,4 +69,3 @@ services:
 
 networks:
   mcserver:
-  mainserver:
