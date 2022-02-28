@@ -30,11 +30,11 @@ permissions:
   "voice.reconnect": default
   "voice.speak": default
   "voice.activation": default
-  "voice.priority": op
+  "voice.priority": default
   "voice.mute": op
   "voice.unmute": op
   "voice.mutelist": op
-  "voice.reload": op
+  "voice.reload": default
   "voice.permissions": op
 
 # Example:
