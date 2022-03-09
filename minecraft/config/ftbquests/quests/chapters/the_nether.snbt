@@ -1,0 +1,227 @@
+{
+	id: "0D7FF8F037EFF568"
+	group: ""
+	order_index: 1
+	filename: "the_nether"
+	title: "The Nether"
+	icon: "minecraft:obsidian"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "46D0AAEEB69E28B3"
+			tasks: [{
+				id: "7FC5892104C0744C"
+				type: "dimension"
+				title: "Enter the Nether"
+				icon: "minecraft:netherrack"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "75D2953DAEB9AFC1"
+				type: "item"
+				item: {
+					id: "minecraft:lingering_potion"
+					Count: 1b
+					tag: {
+						Potion: "minecraft:fire_resistance"
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			optional: true
+			id: "5B11DB2289D4F66C"
+			tasks: [{
+				id: "4DBABAE3AE00C903"
+				type: "kill"
+				title: "Kill a Blaze Guardian"
+				icon: "minecraft:blaze_rod"
+				entity: "adventurez:blaze_guardian"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "3498507110C3395A"
+					type: "item"
+					item: {
+						id: "gofish:blaze_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "333DADD33BB723EB"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			optional: true
+			id: "69872C1F1CCBDEBD"
+			tasks: [{
+				id: "745C505DC4DF253C"
+				type: "kill"
+				title: "Kill a Necromancer"
+				icon: "minecraft:wither_skeleton_skull"
+				entity: "adventurez:necromancer"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "6E50CDBB28E05FE8"
+					type: "item"
+					item: "adventurez:piglin_flag_block"
+				}
+				{
+					id: "175A729DBF425450"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 0.0d
+			optional: true
+			id: "4E14675B45B7DD15"
+			tasks: [{
+				id: "6F13475E767FB83F"
+				type: "kill"
+				title: "Kill a Piglin Beast"
+				icon: "adventurez:piglin_flag_block"
+				entity: "adventurez:piglin_beast"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "70D68C0AB105C4B9"
+					type: "item"
+					item: "minecraft:golden_apple"
+				}
+				{
+					id: "6D4212F74805D47A"
+					type: "item"
+					item: "minecraft:gold_block"
+				}
+				{
+					id: "3ADDE5B4A9365E66"
+					type: "item"
+					item: "gofish:golden_fish"
+				}
+			]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["46D0AAEEB69E28B3"]
+			id: "6B37BF7003BA0AAA"
+			tasks: [{
+				id: "52A14E87246F74C8"
+				type: "kill"
+				title: "Kill a the Soul Reaper"
+				icon: "skinnedlanterns:wither_skeleton_soul_lantern_block"
+				entity: "adventurez:soul_reaper"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "0C0C3887E73B90A9"
+					type: "item"
+					item: "bosses_of_mass_destruction:soul_star"
+					count: 2
+				}
+				{
+					id: "3FC4260BB6CFB724"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			dependencies: ["6B37BF7003BA0AAA"]
+			id: "6FE3E409F3305431"
+			tasks: [{
+				id: "746282A3B3D28D48"
+				type: "kill"
+				title: "Kill the Nether Gauntlet"
+				icon: "bosses_of_mass_destruction:blazing_eye"
+				entity: "bosses_of_mass_destruction:gauntlet"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4E8661E3F5D99C9D"
+					type: "item"
+					item: "carrier:glove"
+				}
+				{
+					id: "2B282156DB9B62E5"
+					type: "item"
+					item: "adventurez:gilded_stone"
+					count: 8
+				}
+				{
+					id: "64619092A38B29F6"
+					type: "item"
+					item: "minecraft:chiseled_polished_blackstone"
+					count: 4
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			dependencies: ["6FE3E409F3305431"]
+			id: "3963B69A10D95565"
+			tasks: [{
+				id: "3CCB99D30F004CC1"
+				type: "kill"
+				title: "Kill the Blackstone Golem"
+				icon: "adventurez:stone_golem_heart"
+				entity: "adventurez:stone_golem"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "516AD08EEACEE00B"
+					type: "item"
+					item: "adventurez:gilded_netherite_fragment"
+					count: 6
+				}
+				{
+					id: "3BCA57FEE9E34C48"
+					type: "item"
+					item: "gofish:gilded_blackstone_crate"
+				}
+				{
+					id: "5503BB225BB22B8D"
+					type: "item"
+					item: "waystones:blackstone_brick_waystone"
+				}
+				{
+					id: "1A4A2A3CD92EE819"
+					type: "item"
+					item: "gofish:gilded_blackstone_carp"
+					count: 3
+				}
+				{
+					id: "6EAF68B79B59CE1A"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+  "enableCopperGolem": true,
+  "generateCopperGolemAreaStructure": true,
+  "enableGlareSpawn": true,
+  "glareSpawnWeight": 32,
+  "glareSpawnMinGroupSize": 1,
+  "glareSpawnMaxGroupSize": 1,
+  "enableMoobloomSpawn": true,
+  "moobloomSpawnWeight": 32,
+  "moobloomSpawnMinGroupSize": 2,
+  "moobloomSpawnMaxGroupSize": 4,
+  "enableBeekeeperVillagerProfession": true,
+  "generateBeekeeperAreaStructure": true,
+  "enableIllusionerInRaids": true,
+  "generateIllusionerShackStructure": true,
+  "illusionerShackStructureSpacing": 25,
+  "illusionerShackStructureSeparation": 20
+}

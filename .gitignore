@@ -6,3 +6,5 @@ grafana-storage/*
 *.log
 .fabric/
 logs/
+crash-reports/*
+not-enough-crashes

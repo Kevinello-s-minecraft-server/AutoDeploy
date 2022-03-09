@@ -1,0 +1,293 @@
+{
+	id: "0F48E783626E8882"
+	group: ""
+	order_index: 0
+	filename: "overworld"
+	title: "The Overworld"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.5d
+			y: 0.0d
+			id: "4D6BAED11E40D71A"
+			tasks: [{
+				id: "015840E17B47EC63"
+				type: "dimension"
+				title: "Welcome to Medieval Minecraft [FABRIC]"
+				icon: "minecraft:grass_block"
+				dimension: "minecraft:overworld"
+			}]
+			rewards: [
+				{
+					id: "3220E224D3362939"
+					type: "item"
+					item: {
+						id: "minecraft:written_book"
+						Count: 1b
+						tag: {
+							pages: ["{\"text\":\"Welcome to Medieval Minecraft [FABRIC]. \\nThe Quests will guide you on the bosses you can defeat in the different Dimensions.\\nThe est is up to you to Explore and Experience this wonderfull NEW world full of AMAZING Mods!\"}"]
+							RepairCost: 0
+							author: "SharkieLPS"
+							display: {
+								Name: "{\"text\":\"Medieval Minecraft [FABRIC]\"}"
+							}
+							filtered_title: "MMC"
+							title: "MMC"
+						}
+					}
+				}
+				{
+					id: "1E8C1BF3C54B3EE0"
+					type: "item"
+					item: "bewitchment:book_of_shadows"
+				}
+				{
+					id: "72555F7DA9F61C73"
+					type: "item"
+					item: "adventurez:handbook"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["4AE6B8741CEA770F"]
+			id: "63D82D9074FC34E3"
+			tasks: [{
+				id: "727F7A1D307E65A9"
+				type: "kill"
+				title: "Defeat the Night Lich"
+				icon: "bosses_of_mass_destruction:ancient_anima"
+				entity: "bosses_of_mass_destruction:lich"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "37B03BE444D6331F"
+					type: "item"
+					item: "bosses_of_mass_destruction:mob_ward"
+				}
+				{
+					id: "7C048ADB6DF63093"
+					type: "item"
+					item: "bosses_of_mass_destruction:void_lily"
+				}
+				{
+					id: "780F82E67B338DAE"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.0d
+			dependencies: ["63D82D9074FC34E3"]
+			id: "24969D5FC76CDBB3"
+			tasks: [{
+				id: "3DB51E789F4F929F"
+				type: "kill"
+				title: "Defeat the Void Blossom"
+				icon: "bosses_of_mass_destruction:void_thorn"
+				entity: "bosses_of_mass_destruction:void_blossom"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "68DFBB0E19E00038"
+					type: "item"
+					item: {
+						id: "bosses_of_mass_destruction:earthdive_spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2894E9EFC59F34EC"
+					type: "xp"
+					xp: 100
+				}
+				{
+					id: "2FFD48DDB0939A9A"
+					type: "item"
+					item: "minecraft:totem_of_undying"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			optional: true
+			id: "1C7E9580565509D2"
+			tasks: [{
+				id: "01C2EFC344021C4C"
+				type: "kill"
+				title: "Kill a Mammoth"
+				icon: "adventurez:mammoth_tusk"
+				entity: "adventurez:mammoth"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "4A671F0B31B3D879"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5D8CAB197FEBE30B"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			optional: true
+			id: "2D3BD496319AD33C"
+			tasks: [{
+				id: "64CB4ECC614E2DC9"
+				type: "kill"
+				title: "Kill a Amethyst Golem"
+				icon: "minecraft:amethyst_cluster"
+				entity: "adventurez:amethyst_golem"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "36B0C4D1E8F9B68F"
+					type: "item"
+					item: "infusion_table:infusion_table"
+				}
+				{
+					id: "0A4CD9FA9613B1C7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			optional: true
+			id: "128D2885B2B4AE7E"
+			tasks: [{
+				id: "1841F40D9B6D5AD6"
+				type: "kill"
+				title: "Kill a Desert Rhino"
+				icon: "adventurez:rhino_leather"
+				entity: "adventurez:desert_rhino"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "42B413E3F36C4CAD"
+					type: "item"
+					item: "adorn:trading_station"
+				}
+				{
+					id: "490C949EC0C17014"
+					type: "item"
+					item: "tradingpost:trading_post"
+				}
+				{
+					id: "21F8E1ABEB4E9B4D"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 0.0d
+			optional: true
+			id: "7D6D7B7DD55F344D"
+			tasks: [{
+				id: "354A89017B6C62D7"
+				type: "kill"
+				title: "Kill a Summoner"
+				icon: "minecraft:skeleton_skull"
+				entity: "adventurez:summoner"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "50D523F0F7D40E96"
+					type: "item"
+					item: "bosses_of_mass_destruction:soul_star"
+					count: 2
+				}
+				{
+					id: "481650A6A644AE81"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -2.5d
+			y: 0.0d
+			optional: true
+			id: "2DD01E3267ED7DD8"
+			tasks: [{
+				id: "73EDD270A388C26D"
+				type: "kill"
+				title: "Kill a Shaman"
+				icon: "skinnedlanterns:zombie_soul_lantern_block"
+				entity: "adventurez:shaman"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "0AC6209F103ED863"
+					type: "item"
+					item: {
+						id: "minecraft:trident"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EDB22B47D62E367"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: -4.0d
+			y: 0.0d
+			description: ["Guild Master Table can be used as a Vilager Job Block"]
+			dependencies: ["4D6BAED11E40D71A"]
+			id: "4AE6B8741CEA770F"
+			tasks: [{
+				id: "5FE984978C9E7F3D"
+				type: "item"
+				title: "Craft a Guild Master Table and Join a Guild"
+				item: "guild:guild_master_table"
+			}]
+			rewards: [
+				{
+					id: "72993770EB72163E"
+					type: "item"
+					item: "inmis:frayed_backpack"
+				}
+				{
+					id: "40EF6374D06C5828"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+	]
+}

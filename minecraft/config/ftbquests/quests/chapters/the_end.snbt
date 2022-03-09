@@ -1,0 +1,231 @@
+{
+	id: "4B174BB2FDFE4D4F"
+	group: ""
+	order_index: 4
+	filename: "the_end"
+	title: "The End"
+	icon: "minecraft:end_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -0.5d
+			y: -0.5d
+			id: "07E305E95A000FAF"
+			tasks: [{
+				id: "42642531FFCE3EBA"
+				type: "dimension"
+				title: "Enter The End"
+				icon: "minecraft:end_stone"
+				dimension: "minecraft:the_end"
+			}]
+			rewards: [{
+				id: "20C1A6685225ABC1"
+				type: "item"
+				item: "minecraft:end_stone"
+				count: 60
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			dependencies: ["07E305E95A000FAF"]
+			id: "2CE58DD1AE214711"
+			tasks: [{
+				id: "6848B89E38A80BAB"
+				type: "kill"
+				title: "Kill the Ender Dragon"
+				icon: "minecraft:dragon_head"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "1919D53920738BB2"
+					type: "item"
+					item: "adventurez:dragon_saddle"
+				}
+				{
+					id: "1208CE8CEDA29E74"
+					type: "item"
+					item: "plushies:dragon_plushie"
+				}
+				{
+					id: "38CA92A17FD95654"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: -0.5d
+			optional: true
+			id: "21D51BCBD1818836"
+			tasks: [{
+				id: "64FF133673B090FC"
+				type: "kill"
+				title: "Kill a Enderwarthog"
+				icon: "adventurez:warthog_shell_piece"
+				entity: "adventurez:enderwarthog"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "30858682690CF868"
+					type: "item"
+					item: "minecraft:ender_eye"
+				}
+				{
+					id: "459CB45077E841D0"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -0.5d
+			optional: true
+			id: "523ECDEFE767B5D0"
+			tasks: [{
+				id: "0903C15F1037FC44"
+				type: "kill"
+				title: "Kill a Ender Whale"
+				icon: "adventurez:ender_whale_skin"
+				entity: "adventurez:ender_whale"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "7EBB2B890D751802"
+					type: "item"
+					item: "minecraft:ender_eye"
+				}
+				{
+					id: "59AA5C036E2543A7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -0.5d
+			dependencies: ["2CE58DD1AE214711"]
+			id: "7E5FC5E13FFF2D6C"
+			tasks: [{
+				id: "4497666E1477F3A1"
+				type: "kill"
+				title: "Kill the Obsidilith"
+				icon: "bosses_of_mass_destruction:obsidian_heart"
+				entity: "bosses_of_mass_destruction:obsidilith"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "5CCCFB3879B7E25B"
+					type: "item"
+					item: "minecraft:obsidian"
+					count: 25
+				}
+				{
+					id: "698C6D3816F60770"
+					type: "item"
+					item: "minecraft:crying_obsidian"
+					count: 9
+				}
+				{
+					id: "5BED4A669AB10835"
+					type: "item"
+					item: "minecraft:end_rod"
+					count: 8
+				}
+				{
+					id: "5DD60D836CBAFB14"
+					type: "item"
+					item: {
+						id: "dragonloot:dragon_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "15D21F2AD5DAB022"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: -0.5d
+			dependencies: ["7E5FC5E13FFF2D6C"]
+			id: "26E01F1822B87C9D"
+			tasks: [{
+				id: "0CE2C6F045E057B7"
+				type: "kill"
+				title: "Kill the Eye"
+				icon: "minecraft:ender_eye"
+				entity: "adventurez:the_eye"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "1CA800C579FCE8EC"
+					type: "item"
+					item: "bosses_of_mass_destruction:levitation_block"
+				}
+				{
+					id: "037FB5DA0847E7A7"
+					type: "xp"
+					xp: 100
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -0.5d
+			dependencies: ["26E01F1822B87C9D"]
+			id: "5FCA29F10B0B0F24"
+			tasks: [{
+				id: "1EA250B7FA548C0F"
+				type: "kill"
+				title: "Enter the Void and Kill the Void Shadow"
+				icon: "adventurez:source_stone"
+				entity: "adventurez:void_shadow"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "5D3C48515F9031CE"
+					type: "item"
+					item: "dragonloot:dragon_scale"
+					count: 3
+				}
+				{
+					id: "4CA47D13F24771F9"
+					type: "item"
+					item: "bosses_of_mass_destruction:mob_ward"
+				}
+				{
+					id: "6485437B2F07055E"
+					type: "item"
+					item: "bosses_of_mass_destruction:monolith_block"
+				}
+				{
+					id: "5AE898145996CB2B"
+					type: "item"
+					item: "adventurez:shadow_chest_block"
+				}
+				{
+					id: "21C418E19809F111"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+	]
+}

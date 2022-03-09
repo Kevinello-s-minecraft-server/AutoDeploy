@@ -1,0 +1,38 @@
+{
+	id: "1748105DC2596A2C"
+	group: ""
+	order_index: 2
+	filename: "the_aether"
+	title: "The Aether"
+	icon: "minecraft:glowstone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [{
+		x: 0.0d
+		y: 0.0d
+		id: "3ADA45649C41FBDA"
+		tasks: [{
+			id: "29636B8FE37C594F"
+			type: "dimension"
+			title: "Visit The Aether"
+			icon: "minecraft:glowstone"
+			dimension: "the_aether:the_aether"
+		}]
+		rewards: [
+			{
+				id: "5B1D99E5D03B6330"
+				type: "item"
+				item: {
+					id: "conjuring:enchiridion"
+					Count: 1b
+					tag: { }
+				}
+			}
+			{
+				id: "1A80B6BFD0E078C4"
+				type: "xp"
+				xp: 100
+			}
+		]
+	}]
+}
