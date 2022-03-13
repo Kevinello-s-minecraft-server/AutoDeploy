@@ -47,19 +47,19 @@
 	"excluded_entity": [],
 	"allowSpecialZombie": true,
 	// in %
-	"bigZombieChance": 10,
+	"bigZombieChance": 30,
 	"bigZombieSlownessFactor": 0.699999988079071,
-	"bigZombieBonusLifePoints": 10,
-	"bigZombieBonusDamage": 2,
-	"bigZombieSize": 1.2999999523162842,
+	"bigZombieBonusLifePoints": 50,
+	"bigZombieBonusDamage": 6,
+	"bigZombieSize": 2.299999952316284,
 	// in %
-	"speedZombieChance": 10,
-	"speedZombieSpeedFactor": 1.3,
+	"speedZombieChance": 20,
+	"speedZombieSpeedFactor": 1.6,
 	"speedZombieMalusLifePoints": 10,
 	// Each player increases boss attributes
 	"dynamicBossModification": true,
 	// 0.2 = 20% per player
-	"dynamicBossModificator": 0.3,
+	"dynamicBossModificator": 0.6,
 	"bossMaxFactor": 3.0,
 	"bossDistanceFactor": 0.0,
 	"bossTimeFactor": 0.1,

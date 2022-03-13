@@ -1,5 +1,5 @@
 {
-  "seasonLength": 672000,
+  "seasonLength": 336000,
   "seasonLock": {
     "isSeasonLocked": false,
     "lockedSeason": "SPRING"

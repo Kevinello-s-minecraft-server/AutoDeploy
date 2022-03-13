@@ -1,8 +1,8 @@
 {
-  "nightSkippedMessage": "Rise and shine!",
-  "debuffMessage": "You have been awake for {nights} nights and have been given a debuff.",
-  "playersAsleepMessage": "{asleep}/{total} ({percent}%) players are now sleeping!",
-  "notEnoughPlayersAsleepMessage": "{asleep}/{total} ({percent}%) players are now sleeping. {additionallyNeeded} more required to skip the night!",
+  "nightSkippedMessage": "Rise and shine! 滚去打工",
+  "debuffMessage": "996er, you have been awake for {nights} nights and have been given a debuff.",
+  "playersAsleepMessage": "{asleep}/{total} ({percent}%) players are now sleeping! 让我看看是谁还没睡觉",
+  "notEnoughPlayersAsleepMessage": "{asleep}/{total} ({percent}%) players are now sleeping. {additionallyNeeded} more required to skip the night! 让我看看是谁还没睡觉",
   "formatting": [
     "gold"
   ],

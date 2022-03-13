@@ -4,59 +4,59 @@
 	*/
 	"desertPyramidBuriedBarrelGenerates": true,
 	// Base distance between Desert Pyramid Buried Barrels (in chunks)
-	"desertPyramidBuriedBarrelSpacing": 20,
+	"desertPyramidBuriedBarrelSpacing": 40,
 	/* [Jungle Temple Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"jungleTempleBuriedBarrelGenerates": true,
 	// Base distance between Jungle Temple Buried Barrels (in chunks)
-	"jungleTempleBuriedBarrelSpacing": 20,
+	"jungleTempleBuriedBarrelSpacing": 40,
 	/* [Abandoned Mineshaft Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"abandonedMineshaftBuriedBarrelGenerates": true,
 	// Base distance between Abandoned Mineshaft Buried Barrels (in chunks)
-	"abandonedMineshaftBuriedBarrelSpacing": 30,
+	"abandonedMineshaftBuriedBarrelSpacing": 60,
 	/* [End City Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"endCityBuriedBarrelGenerates": true,
 	// Base distance between End City Buried Barrels (in chunks)
-	"endCityBuriedBarrelSpacing": 20,
+	"endCityBuriedBarrelSpacing": 40,
 	/* [Igloo Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"iglooBuriedBarrelGenerates": true,
 	// Base distance between Igloo Buried Barrels (in chunks)
-	"iglooBuriedBarrelSpacing": 20,
+	"iglooBuriedBarrelSpacing": 40,
 	/* [Pillager Outpost Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"pillagerOutpostBuriedBarrelGenerates": true,
 	// Base distance between Pillager Outpost Buried Barrels (in chunks)
-	"pillagerOutpostBuriedBarrelSpacing": 30,
+	"pillagerOutpostBuriedBarrelSpacing": 60,
 	/* [Stronghold Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"strongholdBuriedBarrelGenerates": true,
 	// Base distance between Stronghold Buried Barrels (in chunks)
-	"strongholdBuriedBarrelSpacing": 40,
+	"strongholdBuriedBarrelSpacing": 80,
 	/* [Village Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"villageBuriedBarrelGenerates": true,
 	// Base distance between Village Buried Barrels (in chunks)
-	"villageBuriedBarrelSpacing": 20,
+	"villageBuriedBarrelSpacing": 40,
 	/* [Woodland Mansion Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"woodlandMansionBuriedBarrelGenerates": true,
 	// Base distance between Woodland Mansion Buried Barrels (in chunks)
-	"woodlandMansionBuriedBarrelSpacing": 40,
+	"woodlandMansionBuriedBarrelSpacing": 80,
 	/* [Common Hidden Buried Barrel Spawning Settings]
 	   Basic configuration options for this buried barrel
 	*/
 	"commonHiddenBuriedBarrelGenerates": true,
 	// Base distance between Common Hidden Buried Barrels (in chunks)
-	"commonHiddenBuriedBarrelSpacing": 10
+	"commonHiddenBuriedBarrelSpacing": 20
 }

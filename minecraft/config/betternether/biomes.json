@@ -10,33 +10,33 @@
         },
         "floor": {
           "netherrack_stalactite": {
-            "density [default: 0.05]": 0.05,
+            "density [default: 0.05]": 0.1,
             "limit [default: true]": true
           },
           "glowstone_stalactite": {
-            "density [default: 0.01]": 0.01,
+            "density [default: 0.01]": 0.05,
             "limit [default: true]": true
           },
           "nether_cactus": {
-            "density [default: 0.02]": 0.02,
+            "density [default: 0.02]": 0.04,
             "limit [default: true]": true
           },
           "agave": {
-            "density [default: 0.02]": 0.02,
+            "density [default: 0.02]": 0.04,
             "limit [default: true]": true
           },
           "barrel_cactus": {
-            "density [default: 0.02]": 0.02,
+            "density [default: 0.02]": 0.04,
             "limit [default: true]": true
           }
         },
         "ceil": {
           "netherrack_stalagmite": {
-            "density [default: 0.01]": 0.01,
+            "density [default: 0.01]": 0.04,
             "limit [default: true]": true
           },
           "glowstone_stalagmite": {
-            "density [default: 0.005]": 0.005,
+            "density [default: 0.005]": 0.01,
             "limit [default: true]": true
           }
         },

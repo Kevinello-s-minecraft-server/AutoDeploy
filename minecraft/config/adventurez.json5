@@ -1,5 +1,5 @@
 {
-	"necromancer_spawn_weight": 1,
+	"necromancer_spawn_weight": 3,
 	"nightmare_spawn_weight": 5,
 	// Chance for spawning when mining gold ore in nether; 1/Value
 	"piglin_beast_ore_spawn_chance": 30,
@@ -8,20 +8,20 @@
 	"small_stone_golem_spawn_weight": 5,
 	// Chance for spawning when thunder occurs; 1/Value
 	"summoner_thunder_spawn_chance": 4,
-	"blaze_guardian_spawn_weight": 1,
+	"blaze_guardian_spawn_weight": 3,
 	"fungus_spawn_weight": 8,
 	"orc_spawn_weight": 30,
-	"mammoth_spawn_weight": 1,
+	"mammoth_spawn_weight": 3,
 	"ender_whale_spawn_weight": 5,
 	"iguana_spawn_weight": 10,
 	// Chance for spawning when geode generates; 1/Value
-	"amethyst_golem_spawn_chance": 1,
-	"desert_rhino_spawn_weight": 1,
+	"amethyst_golem_spawn_chance": 3,
+	"desert_rhino_spawn_weight": 3,
 	// Chance for spawning when desert well generates; 1/Value
-	"desert_rhino_well_spawn_chance": 1,
-	"shaman_spawn_weight": 1,
+	"desert_rhino_well_spawn_chance": 3,
+	"shaman_spawn_weight": 3,
 	"deer_spawn_weight": 6,
-	"enderwarthog_spawn_weight": 1,
+	"enderwarthog_spawn_weight": 3,
 	"allow_stone_golem_summoning": true,
 	"allow_the_eye_summoning": true,
 	"allow_dragon_hatching": true,
@@ -34,7 +34,7 @@
 	"allow_special_enchant_loot": true,
 	"allow_extra_tooltips": true,
 	"allow_all_items_on_holder": false,
-	"warthog_rare_chance": 0.009999999776482582,
+	"warthog_rare_chance": 0.09999999403953552,
 	"stoned_heart_duration": 72000,
 	"stoned_heart_amplifier": 0,
 	"allow_other_dragon_hatching": false

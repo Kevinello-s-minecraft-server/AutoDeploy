@@ -6,8 +6,8 @@ services:
     restart: always
     image: kevinserver:latest
     environment:
-      - MCRAM=9G
-      - RAM=10G
+      - MCRAM=12G
+      - RAM=13G
     volumes:
       - ./minecraft:/srv/minecraft
     networks:

@@ -8,14 +8,14 @@
     "taiga",
     "forest"
   ],
-  "owlWeight": 10,
+  "owlWeight": 20,
   "owlMinGroupCount": 1,
   "owlMaxGroupCount": 2,
   "ravenBiomeCategories": [
     "plains",
     "forest"
   ],
-  "ravenWeight": 10,
+  "ravenWeight": 20,
   "ravenMinGroupCount": 1,
   "ravenMaxGroupCount": 3,
   "snakeBiomeCategories": [
@@ -23,26 +23,26 @@
     "savanna",
     "desert"
   ],
-  "snakeWeight": 6,
+  "snakeWeight": 10,
   "snakeMinGroupCount": 1,
   "snakeMaxGroupCount": 2,
   "toadBiomeCategories": [
     "jungle",
     "swamp"
   ],
-  "toadWeight": 10,
+  "toadWeight": 20,
   "toadMinGroupCount": 1,
   "toadMaxGroupCount": 3,
-  "ghostWeight": 20,
+  "ghostWeight": 30,
   "ghostMinGroupCount": 1,
   "ghostMaxGroupCount": 1,
-  "vampireWeight": 20,
+  "vampireWeight": 30,
   "vampireMinGroupCount": 1,
   "vampireMaxGroupCount": 1,
-  "werewolfWeight": 20,
+  "werewolfWeight": 30,
   "werewolfMinGroupCount": 1,
   "werewolfMaxGroupCount": 1,
-  "hellhoundWeight": 6,
+  "hellhoundWeight": 10,
   "hellhoundMinGroupCount": 1,
   "hellhoundMaxGroupCount": 1
 }
