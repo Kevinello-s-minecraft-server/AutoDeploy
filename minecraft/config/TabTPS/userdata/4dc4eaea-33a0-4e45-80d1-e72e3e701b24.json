@@ -6,6 +6,6 @@
     "enabled": false
   },
   "bossBarDisplayHandler": {
-    "enabled": false
+    "enabled": true
   }
 }

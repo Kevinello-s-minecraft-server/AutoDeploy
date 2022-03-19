@@ -8,3 +8,5 @@ grafana-storage/*
 logs/
 crash-reports/*
 not-enough-crashes
+deaths/
+.mixin.out/

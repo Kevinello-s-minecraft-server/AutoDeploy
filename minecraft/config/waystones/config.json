@@ -5,7 +5,7 @@
   "free_local_void_teleport": true,
   "store_waystone_data_on_sneak_break": true,
   "can_owners_redeem_payments": false,
-  "cost_amount": 10,
+  "cost_amount": 1,
   "cost_type": "xp",
   "cost_item": "minecraft:ender_pearl",
   "waystone_block_hardness": 4.0,
