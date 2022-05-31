@@ -12,6 +12,10 @@ services:
       - ./minecraft:/srv/minecraft
     networks:
       - mcserver
+    logging:
+      driver: loki
+      options:
+        loki-url: "http://localhost:3100/loki/api/v1/push"
     ports:
       - 25565:25565
       - 25575:25575
@@ -45,6 +49,7 @@ services:
       - ./grafana-storage:/var/lib/grafana
     ports:
       - 3002:3000
+    user: root
     networks:
       - mcserver
   mcserver_prometheus:
