@@ -4,5 +4,7 @@
 
 `docker-loki-driver-plugin`
 ```shell
-docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions
+docker plugin install grafana/loki-docker-driver:latest --alias loki --grant-all-permissions # x64
+
+docker plugin install grafana/loki-docker-driver:arm-v7 --alias loki --grant-all-permissions # arm
 ```
