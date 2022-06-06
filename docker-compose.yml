@@ -21,26 +21,6 @@ services:
       - 25575:25575
       - 60606:60606/udp
       - 8100:8100
-  mcserver_loki:
-    container_name: mcserver_loki
-    image: grafana/loki
-    restart: always
-    command: -config.file=/etc/loki/loki.yaml
-    volumes:
-      - ./loki/loki.yaml:/etc/loki/loki.yaml
-    ports:
-      - "3100:3100"
-    networks:
-      - mcserver
-  mcserver_exporter:
-    container_name: mcserver_exporter
-    restart: always
-    image: ghcr.io/dirien/minecraft-exporter:latest
-    entrypoint: /usr/bin/minecraft-exporter  --web.listen-address=":8000"  --mc.world="/minecraft/world"  --mc.rcon-address="mc-server:25575"  --mc.rcon-password="kevinmatt"  --mc.mod-server-stats=fabric  --mc.name-source="offline"
-    volumes:
-      - ./minecraft/world:/minecraft/world
-    networks:
-      - mcserver
   mcserver_grafana:
     container_name: mcserver_grafana
     restart: always
@@ -58,8 +38,51 @@ services:
     image: prom/prometheus
     volumes:
       - ./prometheus:/etc/prometheus
+    ports:
+      - 9090:9090
     networks:
       - mcserver
+  mcserver_loki:
+    container_name: mcserver_loki
+    image: grafana/loki
+    restart: always
+    command: -config.file=/etc/loki/loki.yaml
+    volumes:
+      - ./loki/loki.yaml:/etc/loki/loki.yaml
+    ports:
+      - "3100:3100"
+    networks:
+      - mcserver
+  dirien-minecraft-exporter:
+    container_name: dirien-minecraft-exporter
+    restart: always
+    image: ghcr.io/dirien/minecraft-exporter:latest
+    entrypoint: /usr/bin/minecraft-exporter  --web.listen-address=":8000"  --mc.world="/minecraft/world"  --mc.rcon-address="mc-server:25575"  --mc.rcon-password="kevinserver"  --mc.mod-server-stats=fabric  --mc.name-source="offline"
+    # ports:
+    #   - 9700:8000
+    volumes:
+      - ./minecraft/world:/minecraft/world
+      - ./wait-for-it.sh:/wait-for-it.sh
+    networks:
+      - mcserver
+    depends_on:
+      - mc-server
+  joshi425-minecraft_exporter:
+    container_name: joshi425-minecraft_exporter
+    image: joshi425/minecraft_exporter:latest
+    restart: always
+    environment:
+      RCON_HOST: mc-server
+      RCON_PORT: 25575
+      RCON_PASSWORD: kevinserver
+    # ports:
+    #   - 9701:8000
+    volumes:
+      - ./minecraft/world:/world:ro
+    networks:
+      - mcserver
+    depends_on:
+      - mc-server
   node-exporter:
     #inside Port is 9100
     container_name: node-exporter
