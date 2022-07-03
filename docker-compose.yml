@@ -6,8 +6,8 @@ services:
     restart: always
     image: kevinserver:latest
     environment:
-      - MCRAM=12G
-      - RAM=13G
+      - MCRAM=9G
+      - RAM=10G
     volumes:
       - ./minecraft:/srv/minecraft
     networks:
@@ -38,8 +38,6 @@ services:
     image: prom/prometheus
     volumes:
       - ./prometheus:/etc/prometheus
-    ports:
-      - 9090:9090
     networks:
       - mcserver
   mcserver_loki:
@@ -58,27 +56,9 @@ services:
     restart: always
     image: ghcr.io/dirien/minecraft-exporter:latest
     entrypoint: /usr/bin/minecraft-exporter  --web.listen-address=":8000"  --mc.world="/minecraft/world"  --mc.rcon-address="mc-server:25575"  --mc.rcon-password="kevinserver"  --mc.mod-server-stats=fabric  --mc.name-source="offline"
-    # ports:
-    #   - 9700:8000
     volumes:
       - ./minecraft/world:/minecraft/world
       - ./wait-for-it.sh:/wait-for-it.sh
-    networks:
-      - mcserver
-    depends_on:
-      - mc-server
-  joshi425-minecraft_exporter:
-    container_name: joshi425-minecraft_exporter
-    image: joshi425/minecraft_exporter:latest
-    restart: always
-    environment:
-      RCON_HOST: mc-server
-      RCON_PORT: 25575
-      RCON_PASSWORD: kevinserver
-    # ports:
-    #   - 9701:8000
-    volumes:
-      - ./minecraft/world:/world:ro
     networks:
       - mcserver
     depends_on:

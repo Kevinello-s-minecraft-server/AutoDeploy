@@ -32,11 +32,3 @@ scrape_configs:
         labels:
           instance: localhost
           minecraft: "true"
-  
-  # https://github.com/Joshi425/minecraft-exporter
-  - job_name: joshi425-minecraft_exporter
-    static_configs:
-      - targets: ['joshi425-minecraft_exporter:8000']
-        labels:
-          instance: localhost
-          minecraft: "true"
