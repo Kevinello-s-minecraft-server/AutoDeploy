@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   mc-server:
+    build: ./minecraft
     container_name: mc_server
     restart: always
     image: kevinserver:latest
