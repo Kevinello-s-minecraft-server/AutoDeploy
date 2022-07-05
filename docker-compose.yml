@@ -26,6 +26,8 @@ services:
     container_name: mcserver_grafana
     restart: always
     image: grafana/grafana-enterprise
+    environment:
+      - GF_SECURITY_ALLOW_EMBEDDING=true
     volumes:
       - ./grafana-storage:/var/lib/grafana
     ports:
