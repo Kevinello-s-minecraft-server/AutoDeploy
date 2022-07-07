@@ -28,6 +28,10 @@ services:
     image: grafana/grafana-enterprise
     environment:
       - GF_SECURITY_ALLOW_EMBEDDING=true
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Viewer
+      - GF_AUTH_ANONYMOUS_ORG_NAME=Main Org.
+      - GF_AUTH_ANONYMOUS_HIDE_VERSION=true
     volumes:
       - ./grafana-storage:/var/lib/grafana
     ports:
