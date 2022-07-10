@@ -106,8 +106,8 @@
     "STAFF_BATTLESTAFF": true
   },
   "whipsEnabled": {
-    "WHIP_VINE_WHIP": true,
-    "WHIP_WHIP": true
+    "WHIP_WHIP": true,
+    "WHIP_VINE_WHIP": true
   },
   "bowsEnabled": {
     "BOW_MASTERS_BOW": true,

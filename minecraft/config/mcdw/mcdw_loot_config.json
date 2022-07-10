@@ -145,8 +145,8 @@
     "SWORD_MECHANIZED_SAWBLADE": 0.01
   },
   "whipSpawnRates": {
-    "WHIP_VINE_WHIP": 0.05,
-    "WHIP_WHIP": 0.1
+    "WHIP_WHIP": 0.1,
+    "WHIP_VINE_WHIP": 0.05
   },
   "bowSpawnRates": {
     "BOW_MASTERS_BOW": 0.05,
